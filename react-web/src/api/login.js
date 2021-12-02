@@ -1,6 +1,6 @@
 // 登录
 import servies from '../utils/request'
-// 登录
+// 登   录
 export function loginApi(arg, data) {
     return servies({
       url: '/console/login?captcha=' + arg,
