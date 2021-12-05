@@ -1,0 +1,161 @@
+.login-container{
+  width: 100%;
+  height: 100%;
+  min-width: 1440px;
+  zoom: 1;
+  background-color: #fff;
+  background: url("../../assets/img/login_bg.svg") no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+}
+.login-logo{
+  width: 142px;
+    height: 51px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.login-content{
+  width: 923px;
+  height: 486px;
+  box-shadow: 8px 0px 10px 6px rgba(36, 57, 103, 0.05999999865889549), 0px 8px 10px 6px rgba(35, 65, 129, 0.07999999821186066);
+  border-radius: 16px 16px 16px 16px;
+  opacity: 1;
+  display: flex;
+}
+.login-info{
+  height: 100%;
+  width: 464px;
+  background-color: #4385FF;
+  background: url("../../assets/img/login_info.svg") no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.login-info .login-title{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  height: 43px;
+}
+.info-title{
+  font-size: 25px;
+  margin-left: 6px;
+  color: #FFFFFF;
+}
+.login-desc{
+  width: 100%;
+  height: 24px;
+  font-size: 24px;
+  color: #FFFFFF; 
+  line-height: 24px;
+  text-align: center;
+  margin-top: 16px;
+}
+.login-info .login-more{
+   display: flex;
+   align-items: center;
+   position: absolute;
+   bottom: 24px;
+   right: 24px;
+   cursor: pointer;
+}
+.look-more{
+  height: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 24px;
+  margin-right: 6px;
+}
+.login-main{
+  width: 459px;
+  height: 100%;
+  padding: 44px 66px;
+  box-sizing: border-box;
+}
+.login-main .login{
+  font-weight: 500;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8500000238418579);
+  line-height: 24px;
+}
+.login-msg{
+  width: 338px;
+  margin-top: 26px;
+}
+.login-msg .box{
+  margin-bottom: 18px;
+  display: flex;
+}
+.login-msg .box .ant-btn-primary{
+  width: 100%;
+  height: 38px;
+}
+.login-msg .box .ant-btn-primary span{
+  letter-spacing: 3px;
+}
+.login-msg .box .ant-input-prefix{
+  font-size: 16px;
+  color: #8C8C8C;
+}
+.regist-info{
+  width: 120px;
+  height: 24px;
+  font-size: 14px;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #4385FF;
+  cursor: pointer;
+  line-height: 24px;
+  border-bottom: 1px solid #4385FF;
+}
+.login-msg  .code{
+  width: 200px;
+  margin-right: 23px;
+}
+.login-msg .box img{
+  width: 109px;
+  height: 38px;
+}
+.login-footer{
+  font-size: 14px;
+  text-align: center;
+  color: #8C8C8C;
+  padding-top:50px;
+}
+.other-login{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-login .line{
+  width: 60px;
+  height: 1px;
+  background: #D9D9D9;
+}
+.other-login  .info{
+  font-size: 14px;
+  color: #595959;
+  margin: 0 16px;
+}
+.login-wechat{
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}

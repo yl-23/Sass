@@ -4,7 +4,7 @@ import { HashRouter as  Switch, Route,Redirect } from 'react-router-dom'
 function App() {
 	return (
 		<div className="App">
-			<Switch>   
+			{/* <Switch>    */}
 				{routes.map((item, index) => {
 					return (
 						<Route
@@ -14,10 +14,9 @@ function App() {
 						/>
 					)
 				})}
-				<Redirect to={{ pathname: '/login' }} />          
-			</Switch>
+				{/* <Redirect to={{ pathname: '/login' }} />           */}
+			{/* </Switch> */}
 		</div>
 	)
 }
-
 export default App

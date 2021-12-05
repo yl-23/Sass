@@ -15,4 +15,12 @@ export function loginInfoApi() {
       url: '/console/login_info',
       method: 'get'
     })
-  }
+ }
+  // 获取验证码
+export function captchaApi() {
+  return servies({
+    url: '/console/captcha',
+    responseType: 'blob',
+    method: 'get'
+  })
+}
