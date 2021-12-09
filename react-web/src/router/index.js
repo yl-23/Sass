@@ -1,4 +1,4 @@
-import {Home,Login} from '../pages/index'
+import {Home,Login, LoginWx} from '../pages/index'
 const routes = [
 	{
 		path: '/home',
@@ -7,6 +7,10 @@ const routes = [
 	{
 		path: '/login',
 		component: Login,
+	},
+    {
+		path: '/loginWx',
+		component: LoginWx,
 	},
 ]
 export default routes

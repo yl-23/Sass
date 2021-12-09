@@ -8,5 +8,9 @@ const Login = Loadable ({
     loader: () => import('./login'),
     loading: Loading
 });
+const LoginWx = Loadable ({
+    loader: () => import('./loginWx'),
+    loading: Loading
+});
 
-export { Home,Login }
+export { Home,Login,LoginWx }

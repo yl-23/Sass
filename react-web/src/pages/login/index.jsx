@@ -103,7 +103,9 @@ class Login extends Component {
                     <span className='line'></span>
                   </div>
                   <div className='login-wechat'>
-                    <img src={loginWechat} alt="" />
+                    <img src={loginWechat} alt="" onClick={()=>{
+                          this.props.history.push('/loginWx')
+                    }}/>
                   </div>
                 </div>
               </div>

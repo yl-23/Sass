@@ -24,3 +24,11 @@ export function captchaApi() {
     method: 'get'
   })
 }
+// 企业微信扫码登录
+export function wechartApi(data) {
+    return servies({
+      url: '/console/wechat/loginQrCodeUrl',
+      method: 'get',
+      params: data
+    })
+  }
