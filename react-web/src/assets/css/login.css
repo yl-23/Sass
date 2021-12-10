@@ -101,6 +101,20 @@
   margin-bottom: 18px;
   display: flex;
 }
+.login-msg .agreement{
+    margin-bottom: 28px;
+}
+.login-msg .agreement span{
+    font-size: 14px;
+    color: #595959;
+}
+.login-msg .agreement  .user-agreement{
+    color: #4385FF;
+    cursor: pointer;
+}
+.login-msg .agreement .ant-checkbox-wrapper{
+    margin-right: 8px;
+}
 .login-msg .box .ant-btn-primary{
   width: 100%;
   height: 38px;
@@ -127,8 +141,8 @@
   width: 200px;
   margin-right: 23px;
 }
-.login-msg .box img{
-  width: 109px;
+.login-msg .box img,.ant-btn{
+  width: 115px;
   height: 38px;
 }
 .login-footer{
@@ -170,6 +184,18 @@
     width: 100%;
     text-align: center;
     font-size: 14px;
+    color: #4385FF;
+    cursor: pointer;
+}
+/* 注册 */
+.register-footer{
+    text-align: center;
+}
+.register-footer span{
+    font-size: 14px;
+    color: #595959;
+}
+.register-footer .have-login{
     color: #4385FF;
     cursor: pointer;
 }

@@ -4,7 +4,7 @@ import { wechartApi } from '../../api/login'
 import logoPic from '../../assets/img/login_logo.svg'
 import titleLog from '../../assets/img/login_title.svg'
 import loginMore from '../../assets/img/login_more.svg'
-import '../login/index.css'
+import '../../assets/css/login.css'
 class LoginWx extends Component {
 	constructor(props) {
 		super(props)

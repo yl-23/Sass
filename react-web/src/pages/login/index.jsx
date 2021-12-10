@@ -5,7 +5,7 @@ import logoPic from '../../assets/img/login_logo.svg'
 import titleLog from '../../assets/img/login_title.svg'
 import loginMore from '../../assets/img/login_more.svg'
 import loginWechat from '../../assets/img/login_wechat.svg'
-import './index.css'
+import '../../assets/css/login.css'
 class Login extends Component {
     constructor(props) {
       super(props);
@@ -77,17 +77,17 @@ class Login extends Component {
                   <div className='login'>登录</div>
                   <div className='login-msg'>
                       <div className='box'>
-                        <Input  prefix='账号'  value={this.state.userName}  onChange={(e)=>{
+                        <Input  placeholder='账号'  value={this.state.userName}  onChange={(e)=>{
                           this.handelChange(e,'userName')
                         }}/>
                       </div>
                       <div className='box'>
-                        <Input.Password  prefix='密码' value={this.state.password} onChange={(e)=>{
+                        <Input.Password  placeholder='密码' value={this.state.password} onChange={(e)=>{
                           this.handelChange(e,'password')
                         }}/>
                       </div>
                       <div className='box'>
-                        <Input  prefix='验证码' className='code' value={this.state.code} onChange={(e)=>{
+                        <Input  placeholder='验证码' className='code' value={this.state.code} onChange={(e)=>{
                           this.handelChange(e,'code')
                         }}/>
                         <img src={this.state.codeUrl} alt="" onClick = {this.getCaptcha}/>
@@ -96,7 +96,9 @@ class Login extends Component {
                         <Button type="primary" onClick={this.bindClick}>登录系统</Button>
                       </div>
                   </div>
-                  <div className='regist-info'>没有账号?申请试用</div>
+                  <div className='regist-info' onClick={()=>{
+                            this.props.history.push('/register')
+                        }}>没有账号?申请试用</div>
                   <div className='other-login'>
                     <span className='line'></span>
                     <span className='info'>其他登录方式</span>
