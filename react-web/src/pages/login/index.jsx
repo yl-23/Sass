@@ -4,7 +4,7 @@ import titleLog from '../../assets/img/login_title.svg'
 import loginMore from '../../assets/img/login_more.svg'
 import '../../assets/css/login.css'
 import { Login, LoginWx, Register } from '../index'
-import { HashRouter as Router, Switch, Redirect, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route ,Redirect} from 'react-router-dom'
 class loginCom extends Component {
 	render() {
 		return (
@@ -30,8 +30,8 @@ class loginCom extends Component {
 						<Switch>
 							<Route path="/login" component={Login} />
 							<Route path="/loginWx" component={LoginWx} />
-							<Route path="/register" component={Register} />
-							<Redirect to={{ pathname: '/login' }} />          
+							<Route path="/register" component={Register} />    
+                            <Redirect to={{ pathname: '/login' }} />      
 						</Switch>
 					</Router>
 				</div>

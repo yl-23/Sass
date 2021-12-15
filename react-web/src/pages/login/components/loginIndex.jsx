@@ -24,7 +24,7 @@ class Login extends Component {
       const data={
         name: this.state.userName.split('@')[0],
         enterpriseId: this.state.userName.split('@')[1],
-        password: 'caab1c9da936f1818b1463a771993f4135bfdb18f8f37830812c90334c160654'
+        password: 'c4318372f98f4c46ed3a32c16ee4d7a76c832886d887631c0294b3314f34edf1'
       }
       loginApi(this.state.code,data).then((res)=>{
             if(res.data.status===0){
@@ -53,6 +53,10 @@ class Login extends Component {
     
     }
     render () {
+        const { userName, password, code } =
+			this.state
+		const _checked =
+			!!userName && !!password && !!code 
         return (
                 <div className='login-main'>
                   <div className='login'>登录</div>
@@ -74,7 +78,7 @@ class Login extends Component {
                         <img src={this.state.codeUrl} alt="" onClick = {this.getCaptcha}/>
                       </div>
                       <div className='box'>
-                        <Button type="primary" onClick={this.bindClick}>登录系统</Button>
+                        <Button type="primary" onClick={this.bindClick} disabled={!_checked}>登录系统</Button>
                       </div>
                   </div>
                   <div className='regist-info' onClick={()=>{
